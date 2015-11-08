@@ -1,0 +1,4 @@
+== README
+
+This is a base template for any HAML and Bootstrap Website anyone wants to create with those two already created and a homepage routed.
+<tt>rake doc:app</tt>.
