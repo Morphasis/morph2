@@ -1,3 +1,108 @@
 // Place all the styles related to the Homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background-image: url("brick.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.navbar li { color: #000 } 
+.navbar .nav > li > a {
+    color:  blue;
+}
+.navbar-default .navbar-brand {
+    color: blue;
+}
+
+#test p {
+    opacity: 0;
+    margin-top: 230px IMPORTANT;
+    font-size: 21px;
+    text-align: center;
+    -webkit-transition: opacity 3s ease-in;
+    -moz-transition: opacity 3s ease-in;
+    -o-transition: opacity 3s ease-in;
+    -ms-transition: opacity 3s ease-in;
+    transition: opacity 3s ease-in;
+    font-size: 23px;
+    font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+    align: center;
+}
+#test p.load {
+    opacity: 1;
+}
+h1 {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 23px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+}
+h3 {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 23px;
+}
+p {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+blockquote {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+pre {
+	font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+	font-size: 11px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 23px;
+}
+
+
+#test2 p {
+    opacity: 0;
+    margin-top: 23px;
+    font-size: 21px;
+    text-align: center;
+    -webkit-transition: opacity 7s ease-in;
+    -moz-transition: opacity 7s ease-in;
+    -o-transition: opacity 7s ease-in;
+    -ms-transition: opacity 7s ease-in;
+    transition: opacity 7s ease-in;
+    font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 23px;
+}
+.div1{
+  background:rgba(255,255,255,0.5);
+  margin: 0 auto;
+}
+#test2 p.load {
+    opacity: 1;
+}
+.contact{
+  margin: 0 auto;
+  text-align: center;
+}
