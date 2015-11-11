@@ -1,9 +1,6 @@
 = render "navbar"
-%br
-#test.div1
-  %p
-    Jack Sharville
-#test2.div1
+#titlearea.div1{:style => "display:none"}
+  %h1 Jack Sharville
   %h3
     %p
       Hi im Jack, I do computer things its that simple!
@@ -11,16 +8,34 @@
       If you are interested in contacting me please click the contact me tab.
     %p
       If you would like to see some of the projects i worked on in the past you can view my recent projects tab.
-.col-md-3.pull-right.div1
+.togglebox
+  %h3.btn#show3 My Skills
+  %h3.btn#show2 Contact Me
+  %h3.btn#show1 About Me!
+#hiddenPanel.col-md-4.pull-right.div1{:style => "display:none"}
   %p
     So as you know my name is Jack, I have been working with computers for as long as i could operate one. Which sounds cliché but i honestly can't remember when i started working with computers. However I can tell you however that my first pc was a computer that my father built a year before i was born and i kept and cherished as it far outdated me it was one of these old grey boxes.
   %p
     I started getting really into tec when i pulled an old apple computed one of the turquoise blue monitor ones from the scrap heap and fixed it by pulling out waffle and pennys from the cd drive. Later i moved onto building computers and then i started breaking video games. Not cheating just creating new items and interactions downloading SDK for hammer development and then java SDK for minecraft anything that could be broken modded and put back together i made sure i did it. Or at least tried :). 
   %p
     Then fortunately for me i got introduced into web development. I enjoy my job greatly but i'm still learning like anyone is on a day to day basis. So i'm looking currently to go work in a team because that's how you grow as a developer. Currently i'm writing in RoR and i like it because of its structure and framework. So if you are interested in giving me a job or you need a website made don't hesitate to contact me i'm friendly and don't bite !
-  
+#hiddenPanel2.col-md-3.pull-right.div1{:style => "display:none"}
+  %h3 
+    My best hours are to contact me from 5am to 9pm gmt+1 but i will most likely respond immediatly.
+    %p
+    %p Email: jacksharville@gmail.com 
+    %p Phone Number: 07443497318
+    %p skype
+
 :javascript
-  $(document).ready(function() {
-          $("#test p").addClass("load");
-          $("#test2 p").addClass("load");
+  $(document).ready(function(){
+      $("#show1").click(function(){
+          $("#hiddenPanel").toggle();
       });
+      $("#show2").click(function(){
+          $("#hiddenPanel2").toggle();
+      });
+  });
+  $(function(){  // $(document).ready shorthand
+    $('#titlearea').fadeIn(3000);
+  });
