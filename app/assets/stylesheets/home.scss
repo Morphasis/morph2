@@ -81,7 +81,13 @@ pre {
   margin: 0 auto;
   text-align: center;
 }
-.togglebox .btn{
+//.togglebox .btn{
+//  background:rgba(255,255,255,0.5);
+//  margin: 0;
+//}
+.sh:hover{
+  background:rgba(255,255,255,0.75);
+}
+.sh{
   background:rgba(255,255,255,0.5);
-  margin: 0;
 }
